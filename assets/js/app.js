@@ -78,9 +78,9 @@ $('.parentBox').slick({
   slidesToShow:6,
   slidesToScroll:1,
   autoplaySpeed:0,
-  speed:5000,
+  speed:500,
   pauseOnHover:false,
-  cssEase:'linearzz'
+  cssEase:'linearz',
 });
 
 $(".slider-1").slick({
