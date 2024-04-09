@@ -6,8 +6,6 @@
     list-style-type: none !important;
     text-decoration: none !important;
     box-sizing: border-box !important;
-    scroll-behavior: smooth !important;
-    transition: all 555ms linear !important;
 }
 
 .bg-yellow {
@@ -72,12 +70,12 @@
 }
 
 .icon-para-2 {
-    font-family: Poppins;
     font-size: 12.8px;
     font-weight: 300;
     line-height: 19.2px;
     text-align: left;
     color: #7B7B7B;
+    font-family: "Poppins", sans-serif;
 }
 
 .Volutpat {
@@ -214,7 +212,6 @@
     background: #DDD;
 }
 
-
 .slideBox img {
     filter: grayscale(500%);
 }
@@ -274,10 +271,11 @@
 }
 
 .slider-card {
-    max-width: 370px;
+    width: 370px;
     flex-shrink: 0;
     border-radius: 10px;
     background: #0389FF1F;
+
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.10);
     padding: 25px 25px 24px 25px;
     padding-left: 12px;
