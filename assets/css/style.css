@@ -463,9 +463,102 @@
 
 .scroll:hover {
     border-radius: 10px;
-    background: var(--Orange, #FF5300);
+    background: 
+    var(--Orange, #FF5300);
+}  
 
+#loader {
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    border-radius: 50%;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #ffffff;
+    border-top: 16px solid #d3d3d3;
+    animation: spin 1s linear infinite;
+    -webkit-animation: spin 1s linear infinite;
 }
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+#myDiv {
+    display: none;
+    text-align: center;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 
 @media (max-width:1100px) {
     .svg {
