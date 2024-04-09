@@ -214,14 +214,14 @@
     background: #DDD;
 }
 
+
 .slideBox img {
-    filter: grayscale(100%);
+    filter: grayscale(500%);
 }
 
 .slideBox:hover img {
     filter: unset;
 }
-
 
 .bg-light-pink {
     background-color: #FFF7F4;

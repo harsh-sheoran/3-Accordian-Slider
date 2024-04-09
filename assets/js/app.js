@@ -69,19 +69,21 @@ $('.slick-slider-container').slick({
         }
     ]
 });
-
 $('.parentBox').slick({
-  dots:false,
-  infinite:true,
-  arrows:false,
-  autoplay:true,
-  slidesToShow:6,
-  slidesToScroll:1,
-  autoplaySpeed:0,
-  speed:500,
-  pauseOnHover:false,
-  cssEase:'linearz',
+    arrows: false,
+    dots: false,
+    infinite: true,
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    variableWidth: true,
+    slidesToShow: 6,
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 500,
+    pauseOnHover: true,
+    cssEase: 'linear',
 });
+
 
 $(".slider-1").slick({
     dots: false,
