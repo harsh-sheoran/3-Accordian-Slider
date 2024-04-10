@@ -61,20 +61,20 @@
 }
 
 .icon-para {
-    font-family: Poppins;
     font-size: 20px;
     font-weight: 500;
-    line-height: 30px;
     text-align: left;
     color: #FF5300;
+    line-height: 30px;
+    font-family: Poppins;
 }
 
 .icon-para-2 {
     font-size: 12.8px;
     font-weight: 300;
-    line-height: 19.2px;
     text-align: left;
     color: #7B7B7B;
+    line-height: 19.2px;
     font-family: "Poppins", sans-serif;
 }
 
@@ -229,36 +229,36 @@
 }
 
 .arrow-position {
-    position: absolute;
     left: 96%;
     bottom: 50%;
+    position: absolute;
 }
 
 .arrow-position-1 {
-    position: absolute;
     right: 96%;
     bottom: 50%;
+    position: absolute;
 }
 
 .slicks-para {
-    color: var(--Paragraph, #7B7B7B);
-    font-family: "Poppins", sans-serif;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 24px;
+    font-style: normal;
+    font-family: "Poppins", sans-serif;
+    color: var(--Paragraph, #7B7B7B);
 }
 
 .position {
-    position: absolute;
     right: -60px;
     bottom: 230px;
+    position: absolute;
 }
 
 .position-1 {
-    position: absolute;
-    bottom: 230px;
     left: -60px;
+    bottom: 230px;
+    position: absolute;
 }
 
 .slick-slider-card {
@@ -273,18 +273,18 @@
 .slider-card {
     width: 370px;
     flex-shrink: 0;
-    border-radius: 10px;
-    background: #0389FF1F;
-
-    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.10);
-    padding: 25px 25px 24px 25px;
     padding-left: 12px;
     padding-right: 12px;
+    border-radius: 10px;
+    background: #0389FF1F;
+    padding: 25px 25px 24px 25px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.10);
 }
 
 .Quick {
+    left: 56px;
+    top: 85px;
     color: #FFF;
-    font-family: Plus Jakarta Sans;
     font-size: 20px;
     font-style: italic;
     font-weight: 400;
@@ -292,11 +292,8 @@
     text-align: center;
     max-width: 752px;
     max-height: 60px;
-    top: 85px;
-    left: 56px;
+    font-family: "Plus Jakarta Sans",sans-serif;
 }
-
-
 
 /* slider */
 .slider-img {
@@ -322,16 +319,20 @@
     content: '' !important;
 }
 
+.bg-black{
+    background-color: #000000;
+}
+
 .slick-dots li button {
-    font-size: 0;
-    line-height: 0;
-    display: block;
+    border: 0;
     width: 20px;
     height: 20px;
     padding: 5px;
-    cursor: pointer;
-    border: 0;
+    font-size: 0;
     outline: none;
+    line-height: 0;
+    display: block;
+    cursor: pointer;
     color: white !important;
 }
 
@@ -350,7 +351,6 @@
 
 .dark-color {
     background: rgba(251, 253, 255, 0);
-    ;
 }
 
 .py-100 {
@@ -360,28 +360,28 @@
 
 
 .slick-dots li button:before {
-    font-family: 'slick';
-    font-size: 6px;
-    line-height: 20px;
-    position: absolute;
-    top: 0;
     left: 0;
+    top: 0;
     width: 20px;
     height: 20px;
     content: '•';
-    text-align: center;
     opacity: .25%;
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    text-align: center;
     color: black !important;
+    font-family: 'slick',sans-serif;
     -webkit-font-smoothing: antialiased
 }
 
 .slick-dots li {
+    content: '';
+    border-radius: 28px;
     width: 10px !important;
     height: 10px !important;
-    content: '';
     color: #0389FF !important;
     background-color: white !important;
-    border-radius: 28px;
 }
 
 .slick-dots {
@@ -390,12 +390,11 @@
 
 .slick-dots li.slick-active {
     opacity: 100%;
-    background-color: #0389FF !important;
     border-radius: 28px;
-    height: 10px !important;
     width: 50px !important;
+    height: 10px !important;
+    background-color: #0389FF !important;
 }
-
 
 .slick-dots li.slick-active button:before {
     opacity: .75% !important;
@@ -413,19 +412,19 @@
 }
 
 #myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
     z-index: 99;
-    font-size: 18px;
+    right: 30px;
     border: none;
+    bottom: 20px;
     outline: none;
-    background-color: black;
+    display: none;
+    padding: 15px;
     color: white;
     cursor: pointer;
-    padding: 15px;
+    position: fixed;
+    font-size: 18px;
     border-radius: 30px;
+    background-color: black;
 }
 
 #myBtn:hover {
@@ -434,35 +433,33 @@
 
 @media (min-width:1100px) {
     .slick-slider-btn-right {
-        border: 1px solid #373737;
-        border-radius: 50px;
-        max-width: 50px;
         padding: 10px;
+        max-width: 50px;
+        border-radius: 50px;
+        border: 1px solid #373737;
     }
 
     .slick-slider-btn-left {
-        border: 1px solid #373737;
-        border-radius: 50px;
-        max-width: 50px;
         padding: 10px;
+        max-width: 50px;
+        border-radius: 50px;
+        border: 1px solid #373737;
     }
 }
 
 .slick-slider-btn-right:hover {
-    transition: all 250ms linear;
     border-color: #FF5300;
+    transition: all 250ms linear;
 }
 
 .slick-slider-btn-left:hover {
-    transition: all 250ms linear;
     border-color: #FF5300;
-
+    transition: all 250ms linear;
 }
 
 .scroll:hover {
     border-radius: 10px;
-    background: 
-    var(--Orange, #FF5300);
+    background:var(--Orange, #FF5300);
 }  
 
 #loader {
@@ -471,8 +468,8 @@
     z-index: 1;
     width: 120px;
     height: 120px;
-    position: absolute;
     border-radius: 50%;
+    position: absolute;
     margin: -76px 0 0 -76px;
     border: 16px solid #ffffff;
     border-top: 16px solid #d3d3d3;

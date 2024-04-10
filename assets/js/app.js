@@ -1,5 +1,3 @@
-
-
 $('.slick-slider-container').slick({
     dots: false,
     infinite: true,
@@ -127,7 +125,7 @@ $(".slider-1").slick({
 $(".slider-2").slick({
     dots: true,
     arrows: false,
-    autoplay: true,
+    autoplay: false,
     slidesToShow: 1,
     centerMode: true,
     centerPadding: "555px",
