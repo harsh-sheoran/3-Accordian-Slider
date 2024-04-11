@@ -1,3 +1,4 @@
+
 $('.slick-slider-container').slick({
     dots: false,
     infinite: true,
@@ -57,7 +58,7 @@ $('.parentBox').slick({
 });
 
 
-$(".slider-1").slick({
+$(".slide r-1").slick({
     dots: false,
     speed: 3000,
     arrows: false,
@@ -125,7 +126,7 @@ $(".slider-1").slick({
 $(".slider-2").slick({
     dots: true,
     arrows: false,
-    autoplay: false,
+    autoplay: true,
     slidesToShow: 1,
     centerMode: true,
     centerPadding: "555px",
@@ -228,3 +229,31 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+let accordian = document.querySelectorAll(".full-part");
+let firstimg = document.querySelector(".accord-img");
+let firsttxt = document.querySelector(".accord-para");
+firstimg.style.transform = "rotate(180deg)";
+firsttxt.style.display = "block";
+accordian.forEach(element => {
+    let img = element.querySelector(".accord-img");
+    let clicable = element.querySelector(".top-part");
+    let txt = element.querySelector(".accord-para");
+    clicable.addEventListener("click", () => {
+        accordian.forEach(otherelement => {
+            if (otherelement !== element) {
+                let othertxt = otherelement.querySelector(".accord-para");
+                let otehrimg = otherelement.querySelector(".accord-img");
+                othertxt.style.display = "none";
+                otehrimg.style.transform = "rotate(0deg)";
+            }
+        });
+        let disp_text = window.getComputedStyle(txt).display;
+        if (disp_text === "none") {
+            txt.style.display = "block";
+            img.style.transform = "rotate(180deg)";
+        } else {
+            txt.style.display = "none";
+            img.style.transform = "rotate(0deg)";
+        };
+    });
+});

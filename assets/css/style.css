@@ -37,7 +37,7 @@
     font-weight: 400;
     font-family: "Poppins", sans-serif;
 }
-
+ 
 .FAQ {
     font-size: 48px;
     font-weight: 700;
@@ -66,7 +66,7 @@
     text-align: left;
     color: #FF5300;
     line-height: 30px;
-    font-family: Poppins;
+    font-family: "Poppins",sans-serif;
 }
 
 .icon-para-2 {
@@ -89,7 +89,6 @@
 .Testimonials {
     color: #FFFFFF;
 }
-
 
 .bg-blue {
     background-color: #020E19;
@@ -229,13 +228,13 @@
 }
 
 .arrow-position {
-    left: 96%;
+    left: 95%;
     bottom: 50%;
     position: absolute;
 }
 
 .arrow-position-1 {
-    right: 96%;
+    right: 95%;
     bottom: 50%;
     position: absolute;
 }
@@ -271,7 +270,7 @@
 }
 
 .slider-card {
-    width: 370px;
+    width: 946px;
     flex-shrink: 0;
     padding-left: 12px;
     padding-right: 12px;
@@ -399,10 +398,6 @@
 .slick-dots li.slick-active button:before {
     opacity: .75% !important;
     color: white !important;
-}
-
-.max-800 {
-    width: 637px;
 }
 
 .slider-card {
